@@ -1,9 +1,5 @@
-import { Button } from "@repo/ui/components/view/button";
+import { Button } from "@repo/ui/src/components/button";
 
 export default function Home() {
-  return (
-    <div>
-      <Button>Done</Button>
-    </div>
-  );
+  return <div></div>;
 }
