@@ -1,8 +1,9 @@
 {
   "extends": "@repo/typescript-config/react-library.json",
   "compilerOptions": {
+    "jsx": "react-jsx",
     "outDir": "dist"
   },
-  "include": ["components/**/*.ts", "components/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/**/*.tsx"],
   "exclude": ["node_modules", "dist"]
 }
