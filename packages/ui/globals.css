@@ -10,7 +10,7 @@
     --secondary: 0 0% 7%;
     --secondary-foreground: 0 0% 92%;
     --border: 0 0% 7%;
-    --muted-foreground: 0 0% 32%;
+    --muted-foreground: 0 0% 28%;
   }
 
   .dark {
@@ -20,7 +20,7 @@
     --secondary: 0 0% 93%;
     --secondary-foreground: 0 0% 7%;
     --border: 0 0% 93%;
-    --muted-foreground: 0 0% 32%;
+    --muted-foreground: 0 0% 78%;
   }
 }
 

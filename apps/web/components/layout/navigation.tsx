@@ -1,6 +1,5 @@
 import { Button } from "@repo/ui/src/components/button";
 import Link from "next/link";
-import Image from "next/image";
 import { ThemeChanger } from "./theme-changer";
 import { Logo } from "./logo";
 const navLinks = ["home", "product", "pricing"];
