@@ -1,10 +1,6 @@
-"use client";
-import { useTheme } from "next-themes";
 import React from "react";
 
 export const Logo = () => {
-  const { theme } = useTheme();
-  const logoColor = theme !== "light" ? "white" : "black";
   return (
     <svg
       width="79"

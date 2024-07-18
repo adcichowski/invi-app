@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const chivo = Chivo({
-  weight: ["500", "700", "900"],
+  weight: ["200", "300", "500", "700", "900"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",
@@ -30,7 +30,7 @@ export default function RootLayout({
       className={`bg-background w-full h-full light dark ${chivo.className}`}
       suppressHydrationWarning
     >
-      <body className="w-full h-full flex flex-col max-w-screen-xl mx-auto bg-transparent">
+      <body className="w-full h-full flex flex-col max-w-screen-xl mx-auto bg-transparent px-4 py-2 pt-6 xl:px-0">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
