@@ -11,7 +11,6 @@
     --secondary-foreground: 0 0% 92%;
     --border: 0 0% 7%;
     --muted-foreground: 0 0% 28%;
-    --background-lines: 0 0% 60%;
   }
 
   .dark {
@@ -22,7 +21,6 @@
     --secondary-foreground: 0 0% 7%;
     --border: 0 0% 93%;
     --muted-foreground: 0 0% 78%;
-    --background-lines: 0 0% 60%;
   }
 }
 
