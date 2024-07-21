@@ -5,8 +5,9 @@ import { Chart } from "../components/layout/home/chart";
 import { Functionalities } from "../components/layout/home/functionalities";
 import { BackgroundGradientLines } from "../components/layout/home/background-gradient-lines";
 import { ThemeController } from "../components/theme-controller";
+import Link from "next/link";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div>
       <article className="flex mt-20 justify-between flex-wrap xl:gap-x-10 md:gap-x-5 gap-5">
@@ -31,8 +32,8 @@ export default function Home() {
             The platform provides access to the best banking offers and full
             insight into money flow, expenses, income, and investments.
           </Paragraph>
-          <Button variant="secondary" className="w-min">
-            Get Started
+          <Button asChild variant="secondary" className="w-min">
+            <Link href="/api/auth/login">Get Started</Link>
           </Button>
         </div>
         <div className="sm:max-w-2xl max-w-xl w-full">

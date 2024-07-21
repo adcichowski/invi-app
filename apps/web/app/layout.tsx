@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "@repo/ui/globals.css";
 import { Navigation } from "../components/layout/navigation";
 import { ThemeProvider } from "next-themes";
-import { Chivo, Inter } from "next/font/google";
+import { Chivo } from "next/font/google";
+import { UserProvider } from "@auth0/nextjs-auth0/client";
 
 // If loading a variable font, you don't need to specify the font weight
 export const metadata: Metadata = {
@@ -37,8 +38,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navigation />
-          <main className="grow">{children}</main>
+          <UserProvider>
+            <Navigation />
+            <main className="grow">{children}</main>
+          </UserProvider>
         </ThemeProvider>
       </body>
     </html>

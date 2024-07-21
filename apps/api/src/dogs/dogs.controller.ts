@@ -3,10 +3,14 @@ import { AuthGuard } from '@nestjs/passport';
 
 @Controller('dogs')
 export class DogsController {
-  @UseGuards(AuthGuard('jwt'))
+  @Get()
+  all() {
+    return 'hi';
+  }
   @Get(':name')
+  @UseGuards(AuthGuard('jwt'))
   findOne(@Param() params: { name: string }) {
-    if (params.name !== 'mila') return null;
-    return `This action returns a sweet dog.`;
+    if (params.name !== 'milka') return null;
+    return { opinion: `This action returns a sweet dog.` };
   }
 }
