@@ -6,10 +6,14 @@ import { Functionalities } from "../components/layout/home/functionalities";
 import { BackgroundGradientLines } from "../components/layout/home/background-gradient-lines";
 import { ThemeController } from "../components/theme-controller";
 import Link from "next/link";
+import { getSession } from "@auth0/nextjs-auth0";
 
 export default async function Home() {
+  const session = await getSession();
+  console.log(session);
   return (
     <div>
+      {JSON.stringify(session, null, 2)}
       <article className="flex mt-20 justify-between flex-wrap xl:gap-x-10 md:gap-x-5 gap-5">
         <div className="flex flex-col gap-7 min-w-min max-w-lg">
           <div className="relative">

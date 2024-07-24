@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Users {
+  id         String   @id(map: "users_pk") @unique(map: "users_id_uindex") @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  auth0Id    String?  @unique(map: "users_auth0_uindex") @db.VarChar
+  created_at DateTime @default(now()) @db.Timestamp(6)
+  email      String   @unique(map: "users_email_uindex") @db.VarChar
+  active_at  DateTime @default(now()) @db.Timestamp(6)
+}
+
+model Wallets {
+  id         String    @id(map: "wallet_pk") @unique(map: "wallet_id_uindex") @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name       String    @db.VarChar
+  cash       Int?
+  currency   String?   @db.Uuid
+  created_at DateTime? @default(now()) @db.Date
+}
