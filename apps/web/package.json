@@ -10,14 +10,18 @@
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^3.5.0",
-    "@repo/ui": "*",
+    "@radix-ui/react-slot": "^1.1.1",
     "chart.js": "^4.4.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "lucide-react": "^0.408.0",
     "next": "^14.2.5",
     "next-themes": "^0.3.0",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
@@ -29,7 +33,7 @@
     "eslint": "^8",
     "eslint-config-next": "15.0.0-rc.0",
     "postcss": "^8.4.39",
-    "tailwindcss": "^3.4.4",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
 }

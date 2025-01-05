@@ -1,12 +1,12 @@
-import { Button } from "@repo/ui/src/components/button";
-import { Heading } from "@repo/ui/src/components/heading";
-import { Paragraph } from "@repo/ui/src/components/paragraph";
-import { Chart } from "../components/layout/home/chart";
-import { Functionalities } from "../components/layout/home/functionalities";
-import { BackgroundGradientLines } from "../components/layout/home/background-gradient-lines";
-import { ThemeController } from "../components/theme-controller";
+import { Chart } from "../ui/components/layout/home/chart";
+import { Functionalities } from "../ui/components/layout/home/functionalities";
+import { BackgroundGradientLines } from "../ui/components/layout/home/background-gradient-lines";
+import { ThemeController } from "../ui/components/theme-controller";
 import Link from "next/link";
 import { getSession } from "@auth0/nextjs-auth0";
+import { Heading } from "ui/components/heading";
+import { Paragraph } from "ui/components/paragraph";
+import { Button } from "ui/components/button";
 
 export default async function Home() {
   const session = await getSession();

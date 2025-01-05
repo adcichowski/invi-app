@@ -1,5 +1,9 @@
-import { Heading } from "@repo/ui/src/components/heading";
-import { BarChartBigIcon, ReceiptIcon, WalletIcon } from "lucide-react";
+import {
+  BarChartBigIcon,
+  Heading,
+  ReceiptIcon,
+  WalletIcon,
+} from "lucide-react";
 import React from "react";
 
 const listFunctionality = [

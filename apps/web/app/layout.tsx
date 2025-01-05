@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "@repo/ui/globals.css";
-import { Navigation } from "../components/layout/navigation";
+import "globals.css";
+import { Navigation } from "../ui/components/layout/navigation";
 import { ThemeProvider } from "next-themes";
 import { Chivo } from "next/font/google";
 import { UserProvider } from "@auth0/nextjs-auth0/client";

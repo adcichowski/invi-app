@@ -1,4 +1,4 @@
-import { Button } from "@repo/ui/src/components/button";
+import { Button } from "../button";
 import Link from "next/link";
 import { ThemeChanger } from "./theme-changer";
 import { Logo } from "./logo";
